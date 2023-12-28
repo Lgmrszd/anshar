@@ -5,6 +5,7 @@
   "mixins": [
     "BeaconBlockEntityAccessor",
     "BeaconBlockEntityMixin",
+    "BeaconBlockMixin",
     "EnderChestBlockMixin",
     "EndCrystalItemMixin"
   ],

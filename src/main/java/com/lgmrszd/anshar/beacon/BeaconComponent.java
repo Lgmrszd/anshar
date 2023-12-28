@@ -2,11 +2,14 @@ package com.lgmrszd.anshar.beacon;
 
 import com.lgmrszd.anshar.frequency.*;
 import com.lgmrszd.anshar.mixin.BeaconBlockEntityAccessor;
+
 import net.minecraft.block.entity.BeaconBlockEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.Registries;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Pair;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
@@ -265,5 +268,34 @@ public class BeaconComponent implements IBeaconComponent {
         if (world.getTime() % 80L == 0L) {
             rescanPyramid();
         }
+
+        if (frequencyNetwork != null) {
+            Set<BlockPos> teleTargets = frequencyNetwork.getBeacons();
+
+            for (PlayerEntity player : this.playersStandingOn) {
+                if (player.getBlockPos() != beaconBlockEntity.getPos().up()) {
+                    this.playersStandingOn.remove(player);
+                } else {
+                    // show available beacons to teleport to
+                    // if player is crouched, teleport player to nearest
+                    if(player.isSneaking() && world.getTime() % 80L == 0L) {
+                        double lookX = Math.sin(player.getHeadYaw());
+                        double lookZ = Math.cos(player.getHeadYaw());
+                        double lookY = Math.cos(player.getRoll());
+                        System.out.println("you are standing on beacon " + beaconBlockEntity);
+                    }
+                }
+            }
+        }
     }
+
+    public Set<PlayerEntity> playersStandingOn = new HashSet<>();
+
+    @Override
+    public void onPlayerSteppedOn(PlayerEntity player) {
+        System.out.println("(beacon component) player stepped on");
+        playersStandingOn.add(player);
+    }
+
+
 }
