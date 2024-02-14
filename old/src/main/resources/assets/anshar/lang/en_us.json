@@ -1,0 +1,19 @@
+{
+    "advancements.anshar.root.title": "Anshar",
+    "advancements.anshar.root.description": "Where do the Beacons' beams go?",
+    "advancements.anshar.network_enter.title": "My god, it's full of stars!",
+    "advancements.anshar.network_enter.description": "Use a Beacon to embed yourself within the cosmos",
+    "advancements.anshar.network_jump.title": "Infinite Improbability",
+    "advancements.anshar.network_jump.description": "Perform a jump between two Star Gates",
+
+    "anshar.help.transport.gate": "Hold [%s] to enter Star Gate",
+    "anshar.help.transport.exit": "Press [%s] to disembark",
+    "anshar.help.transport.location": "Resonating with: %s",
+
+    "anshar.tooltip.end_crystal.use.linked": "Saved Beacon position",
+    "anshar.tooltip.end_crystal.use.unlinked": "Cleared Beacon position",
+    "anshar.tooltip.end_crystal.linked": "Linked to Beacon at: %d %d %d",
+    "anshar.tooltip.end_crystal.linked.distance": "(Distance: %s)",
+
+    "itemGroup.anshar.anshar_group": "Anshar"
+}

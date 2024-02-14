@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:anshar/network_enter",
+  "criteria": {
+    "network_jump": {
+      "trigger": "minecraft:anshar/network_jump"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.anshar.network_jump.description"
+    },
+    "frame": "goal",
+    "hidden": true,
+    "icon": {
+      "item": "minecraft:nether_star"
+    },
+    "title": {
+      "translate": "advancements.anshar.network_jump.title"
+    }
+  },
+  "requirements": [
+    [
+      "network_jump"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

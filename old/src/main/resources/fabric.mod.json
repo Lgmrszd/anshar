@@ -1,0 +1,59 @@
+{
+	"schemaVersion": 1,
+	"id": "anshar",
+	"version": "${version}",
+	"name": "Anshar",
+	"description": "Explore the ends of eternity with beacons!",
+	"authors": [
+		"Lgmrszd",
+		"hama",
+		"comp500"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/anshar",
+		"sources": "https://github.com/Lgmrszd/anshar"
+	},
+	"license": "LGPL-3.0-only",
+	"icon": "assets/anshar/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.lgmrszd.anshar.Anshar"
+		],
+		"client": [
+			"com.lgmrszd.anshar.AnsharClient"
+		],
+		"fabric-datagen": [
+			"com.lgmrszd.anshar.AnsharDataGenerator"
+		],
+		"cardinal-components": [
+			"com.lgmrszd.anshar.ModComponents"
+		]
+	},
+	"mixins": [
+		"anshar.mixins.json",
+		{
+			"config": "anshar.client.mixins.json",
+			"environment": "client"
+		},
+		"anshar.compat.mixins.json"
+	],
+	"custom": {
+		"cardinal-components" : [
+			"anshar:frequency_identifier",
+			"anshar:beacon",
+			"anshar:network_manager",
+			"anshar:end_crystal",
+			"anshar:player_transport"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.15.1",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*",
+		"forgeconfigapiport": ">=20.4.2"
+	},
+	"suggests": {
+    }
+}

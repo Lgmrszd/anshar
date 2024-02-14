@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "beacon": {
+      "conditions": {
+        "level": {
+          "min": 1
+        }
+      },
+      "trigger": "minecraft:construct_beacon"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:textures/block/obsidian.png",
+    "description": {
+      "translate": "advancements.anshar.root.description"
+    },
+    "icon": {
+      "item": "minecraft:beacon"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.anshar.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "beacon"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,19 @@
+{
+    "advancements.anshar.root.title": "Anshar",
+    "advancements.anshar.root.description": "Wher baconz do bi shinin??O.O",
+    "advancements.anshar.network_enter.title": "Holy yarn it haz gots lotz of SPRINKLEZ!!1",
+    "advancements.anshar.network_enter.description": "ur a SPACECAT NOW!!",
+    "advancements.anshar.network_jump.title": "HAW did dis just hapen??",
+    "advancements.anshar.network_jump.description": "Pounce from teh starry thingy 2 anoza one!",
+
+    "anshar.help.transport.gate": "Hold [%s] to teh stargate to jump!!",
+    "anshar.help.transport.exit": "Tap [%s] to escape from scari void....",
+    "anshar.help.transport.location": "Vibin wizz: %s",
+
+    "anshar.tooltip.end_crystal.use.linked": "Bacon place saved",
+    "anshar.tooltip.end_crystal.use.unlinked": "Bacon place forgotn",
+    "anshar.tooltip.end_crystal.linked": "Lookin 2 teh Bacon at: %d %d %d",
+    "anshar.tooltip.end_crystal.linked.distance": "(So far!!!: %s)",
+
+    "itemGroup.anshar.anshar_group": "Anshar"
+}

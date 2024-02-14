@@ -1,0 +1,19 @@
+{
+    "advancements.anshar.root.title": "Anshar",
+    "advancements.anshar.root.description": "What does Buoy o' light beam marks?",
+    "advancements.anshar.network_enter.title": "Shiver me timbers! It be endless starry sea!",
+    "advancements.anshar.network_enter.description": "Use yer Buoy o' light to stamp yourself within th' cosmos",
+    "advancements.anshar.network_jump.title": "Quick voyage",
+    "advancements.anshar.network_jump.description": "Travel from one Pier o' Stars to another",
+
+    "anshar.help.transport.gate": "Push on [%s] to sail th' Pier o' Stars",
+    "anshar.help.transport.exit": "Stab [%s] to hop off th' Sea o' Void",
+    "anshar.help.transport.location": "Resonatin' with: %s",
+
+    "anshar.tooltip.end_crystal.use.linked": "Buoy o' light mark written",
+    "anshar.tooltip.end_crystal.use.unlinked": "Buoy o' light mark cleared",
+    "anshar.tooltip.end_crystal.linked": "Snoopin' ta Buoy o' light over landmark: %d %d %d",
+    "anshar.tooltip.end_crystal.linked.distance": "(Far much: %s)",
+
+    "itemGroup.anshar.anshar_group": "Anshar"
+}

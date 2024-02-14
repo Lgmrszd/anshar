@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:anshar/root",
+  "criteria": {
+    "entered_network": {
+      "trigger": "minecraft:anshar/entered_network"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.anshar.network_enter.description"
+    },
+    "frame": "goal",
+    "hidden": true,
+    "icon": {
+      "item": "minecraft:beacon"
+    },
+    "title": {
+      "translate": "advancements.anshar.network_enter.title"
+    }
+  },
+  "requirements": [
+    [
+      "entered_network"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
